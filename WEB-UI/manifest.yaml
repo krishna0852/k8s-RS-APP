@@ -23,6 +23,6 @@ spec:
    tier: front-end 
    app: web-server 
  ports:
-   - Protocol: TCP 
+   - protocol: TCP 
      port: 81 
      targetPort: 80
