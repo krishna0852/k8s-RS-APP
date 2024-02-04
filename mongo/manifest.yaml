@@ -19,11 +19,11 @@ kind: Service
 metadata:
   name: mongo-service 
 spec:
-selector:
-  tier: db 
-  app: mongodb 
-ports:
- - protocol: TCP 
-   port: 27017 
-   targetPort: 27017
+ selector:
+   tier: db 
+   app: mongodb 
+ ports:
+  - protocol: TCP 
+    port: 27017 
+    targetPort: 27017
      
