@@ -25,4 +25,4 @@ spec:
  ports:
    - Protocol: TCP 
      port: 81 
-     targetport: 80
+     targetPort: 80
