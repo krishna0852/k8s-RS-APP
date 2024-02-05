@@ -6,7 +6,7 @@ data:
   MONGO_URL: http://mongo-service
 --- 
 apiVersion: v1 
-kind: pod 
+kind: Pod 
 metadata:
   name: user 
   labels:
@@ -16,7 +16,7 @@ spec:
  containers:
    - image: devopshandson3/user:v1
      name: user 
-     port: 
+     ports: 
       - containerPort: 8080 
 ---
 
