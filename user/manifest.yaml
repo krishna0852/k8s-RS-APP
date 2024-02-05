@@ -4,7 +4,7 @@ metadata:
   name: user-configs
 data:
   MONGO_URL: http://mongo-service
-  REDIS_HOST: 'redis'
+  REDIS_HOST: http://redis-service 
 --- 
 apiVersion: v1 
 kind: Pod 
