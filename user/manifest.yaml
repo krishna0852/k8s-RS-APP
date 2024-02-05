@@ -10,7 +10,7 @@ kind: Pod
 metadata:
   name: user 
   labels:
-    tier: registration&login
+    tier: registration-login
     app: user
 spec:
  containers:
@@ -26,7 +26,7 @@ metadata:
   name: user-service 
 spec:
  selector:
-    tier: registration&login
+    tier: registration-login
     app: user
 ports:
 - protocol: TCP 
