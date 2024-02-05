@@ -28,8 +28,8 @@ spec:
  selector:
     tier: registration-login
     app: user
-ports:
-- protocol: TCP 
-  port: 87
-  targetPort: 8080
+ ports:
+   - protocol: TCP 
+     port: 87
+     targetPort: 8080
   
