@@ -10,7 +10,7 @@ apiVersion: v1
 kind: Pod 
 metadata:
   name: cart 
-  lables:
+  labels:
     tier: middle 
     app: cart 
 spec:
