@@ -4,7 +4,7 @@ metadata:
   name: user-configs
 data:
   REDIS_HOST: "redis"
-  MONGO_URL: http://mongo-service
+  MONGO_URL: mongodb://mongo-service:27017/catalogue
   
 --- 
 apiVersion: v1 
