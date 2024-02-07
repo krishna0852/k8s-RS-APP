@@ -3,8 +3,9 @@ kind: ConfigMap
 metadata:
   name: user-configs
 data:
+  REDIS_HOST: "redis"
   MONGO_URL: http://mongo-service
-  REDIS_HOST: 'redis'
+  
 --- 
 apiVersion: v1 
 kind: Pod 
