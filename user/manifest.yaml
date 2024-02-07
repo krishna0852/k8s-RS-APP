@@ -35,6 +35,6 @@ spec:
     app: user
  ports:
    - protocol: TCP 
-     port: 87
+     port: 8080
      targetPort: 8080
   
