@@ -1,0 +1,45 @@
+apiVersion: v1 
+kind: ConfigMap 
+metadata:
+  name: shipping-config
+data:
+  CART_ENDPOINT: "cart-service:8080"
+  DB_HOST: "mysql"
+--- 
+
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: shipping 
+  labels: 
+     tier: middle 
+     type: java 
+spec: 
+ containers: 
+   - image: devopshandson3/shipping:v1 
+     name: shipping
+     imagePullPolicy: Always 
+     port: 
+      - containerPort: 8080 
+     envFrom: 
+       - configMapRef: 
+            name: shipping-config
+
+--- 
+
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: shipping-service 
+spec: 
+ selector: 
+    tier: middle
+    type: java
+ port: 
+   - protocol: TCP 
+     port: 8080 
+     targetPort: 8080 
+
+   
+    
+       
