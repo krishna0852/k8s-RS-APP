@@ -35,7 +35,7 @@ spec:
  selector: 
     tier: middle
     type: java
- port: 
+ ports: 
    - protocol: TCP 
      port: 8080 
      targetPort: 8080 
