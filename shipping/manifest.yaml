@@ -19,7 +19,7 @@ spec:
    - image: devopshandson3/shipping:v1 
      name: shipping
      imagePullPolicy: Always 
-     port: 
+     ports: 
       - containerPort: 8080 
      envFrom: 
        - configMapRef: 
