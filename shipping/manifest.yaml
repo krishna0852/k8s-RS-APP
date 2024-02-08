@@ -4,7 +4,7 @@ metadata:
   name: shipping-config
 data:
   CART_ENDPOINT: "cart-service:8080"
-  DB_HOST: "mysql"
+  DB_HOST: "mysql-service"
 --- 
 
 apiVersion: v1 
