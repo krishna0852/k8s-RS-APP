@@ -11,8 +11,8 @@ apiVersion: v1
 kind: Secret
 metadata:
  name: sql-creds 
+type: opaque 
 data:
- type: opaque 
  MYSQL_USER: c2hpcHBpbmc=
  MYSQL_PASSWORD: c2VjcmV0
 
