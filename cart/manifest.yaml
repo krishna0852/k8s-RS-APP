@@ -16,7 +16,7 @@ metadata:
     app: cart 
 spec:
  containers:
-   - image: devopshandson3/cart:v1
+   - image: devopshandson3/cartk8:v1
      name: cart 
      ports:
       - containerPort: 8080 
