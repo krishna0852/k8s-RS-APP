@@ -4,6 +4,7 @@ metadata:
   name: cart-config
 data:
   REDIS_HOST: "redis"
+  CATALOGUE_HOST: http://catalogue-service
 
 ---
 apiVersion: v1 
